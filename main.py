@@ -13,23 +13,19 @@ def main():
 
     while not installed:
         if internet_on():
-            print "internet is on"
+            print "...Connected."
             build_str = get_latest_linux_build(bucket='fetchit')
             if not os.path.isfile("tmp/{}".format(build_str.split('/')[2])):
                 download_file(build_str)
                 clean_dir()
                 install_fetchit("tmp/{}".format(build_str.split('/')[2]))
             else:
-                print "no update required"
-                break
+                print "No update required."
             installed = True
             print "Done installing fetchit."
-            time.sleep(2)
         else:
-            print "no internet connection... connect to wifi before we continue"
-
-
-    # print get_latest_linux_build()
+            print "No internet connection... connect to wifi before contining."
+            time.sleep(5)
 
 
 def download_file(filename):
