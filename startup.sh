@@ -5,7 +5,6 @@
 
 # REQUIREMENTS
 # 1. AWS Credentials for stage bucket
-# 2. SSH Key for github
 
 
 # Check for internet connection
