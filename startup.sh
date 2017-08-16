@@ -14,7 +14,7 @@
 python main.py
 
 # start app
-install/./FetchitRS
+install/./FetchItRS
 
 ##### We might need an ssh key to get this repo
 ##### also need a temp key for each rs
